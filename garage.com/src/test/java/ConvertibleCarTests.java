@@ -1,4 +1,5 @@
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
@@ -37,11 +38,19 @@ public class ConvertibleCarTests {
 
 	@Test
 	public void canLowerTop() {
-		fail("not implemented yet");
+		ConvertibleCar car = this.Car;
+		
+		boolean isRaised = car.getCanLower();
+		
+		assertTrue(isRaised,"");
 	}
 
 	@Test
 	public void canRaiseTop() {
-		fail("not implemented yet");
+	ConvertibleCar car = this.Car;
+		
+		boolean isRaised = car.getCanRaise();
+		
+		assertFalse(isRaised,"");
 	}
 }
