@@ -6,11 +6,11 @@ public class ConvertibleCar extends Car implements ICar {
 		super(model, engine, ignitionSystem);
 	}
 	
-	public boolean getCanRaise() {
+	public boolean getIsRaised() {
 		return !this.isRaised;
 	}
 	
-	public boolean getCanLower() {
+	public boolean getIsLowered() {
 		return this.isRaised;
 	}
 }

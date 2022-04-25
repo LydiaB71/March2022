@@ -40,17 +40,17 @@ public class ConvertibleCarTests {
 	public void canLowerTop() {
 		ConvertibleCar car = this.Car;
 		
-		boolean isRaised = car.getCanLower();
+		boolean isRaised = car.getIsLowered();
 		
-		assertTrue(isRaised,"");
+		assertTrue(isRaised,"Car top is not already raised");
 	}
 
 	@Test
 	public void canRaiseTop() {
 	ConvertibleCar car = this.Car;
 		
-		boolean isRaised = car.getCanRaise();
+		boolean isRaised = car.getIsRaised();
 		
-		assertFalse(isRaised,"");
+		assertFalse(isRaised,"Car top is raised already");
 	}
 }
